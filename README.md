@@ -1,58 +1,59 @@
 # Customer Churn Prediction 📊
 
-A Data Science and Machine Learning project focused on analyzing customer data, identifying patterns related to customer churn, and building a machine learning pipeline for churn prediction using Python.
+A machine learning project that predicts whether a customer is likely to churn based on customer demographics, account information, and banking activity.
 
----
+## 🚀 Project Overview
 
-## 📌 Project Overview
+Customer churn refers to customers leaving or stopping their relationship with a company.
 
-Customer churn refers to customers who stop using a company's products or services.
+In this project, a Machine Learning classification model is used to predict customer churn based on features such as:
 
-In this project, customer data is analyzed to understand customer behavior and identify factors that may be associated with churn.
+- Credit Score
+- Country
+- Gender
+- Age
+- Tenure
+- Balance
+- Number of Products
+- Credit Card Ownership
+- Active Membership
+- Estimated Salary
 
-The project includes data analysis, data preprocessing, exploratory data analysis (EDA), visualization, machine learning, model evaluation, and a saved machine learning pipeline for making predictions.
-
----
+The trained model is deployed as an interactive **Streamlit web application** where users can enter customer details and get a churn prediction along with the predicted churn probability.
 
 ## 🎯 Objectives
 
-The main objectives of this project are:
-
-- Analyze customer data
-- Understand customer behavior
-- Perform data cleaning and preprocessing
-- Perform Exploratory Data Analysis (EDA)
-- Visualize important patterns in the data
-- Identify factors associated with customer churn
-- Prepare data for machine learning
-- Build a machine learning model
-- Evaluate model performance
-- Save the trained machine learning pipeline
-- Use the trained pipeline for churn prediction
-
----
+- Analyze customer characteristics related to churn
+- Perform feature engineering
+- Train a machine learning classification model
+- Evaluate the model
+- Save the trained model using Joblib
+- Build an interactive Streamlit application
+- Deploy the prediction system as a web app
 
 ## 🛠️ Technologies Used
 
 - Python
 - Pandas
 - NumPy
-- Matplotlib
-- Seaborn
 - Scikit-learn
+- Joblib
+- Streamlit
 - Jupyter Notebook
-- VS Code
-- Git
-- GitHub
 
----
+## ⚙️ Feature Engineering
 
-## 📂 Project Structure
+Additional features were created to improve the model:
+
+- `balance_per_product` — Balance divided by number of products
+- `salary_balance_ratio` — Estimated salary relative to account balance
+- `age_group` — Customers grouped by age
+- `tenure_bucket` — Customers grouped by tenure
+- `high_balance` — Indicator for customers with balance above 50,000
+
+## 🤖 Machine Learning
+
+The final trained pipeline is saved as:
 
 ```text
-Customer-Churn-Prediction/
-│
-├── README.md
-├── Analysis.ipynb
-├── customer data.csv
-├── best_churn_pipeline.pkl
+churn_pipeline.pkl
