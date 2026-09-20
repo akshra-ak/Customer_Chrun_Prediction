@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 # Load trained model
-model = joblib.load("churn_pipeline.pkl")
+model = joblib.load("churn_pipeline_smote.pkl")
 
 st.set_page_config(
     page_title="Customer Churn Prediction",
